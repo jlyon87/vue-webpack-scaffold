@@ -3,6 +3,7 @@
 > Justin's custom vue webpack scaffold.
 
 Includes:
+
 	* code splitting
 	* cash busting
 	* css extraction
