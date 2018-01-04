@@ -12,6 +12,7 @@ const VENDOR_LIBS = [
 	"vuex"
 ];
 
+console.log("Configuring webpack");
 module.exports = {
 	entry: {
 		bundle: './src/main.js',
