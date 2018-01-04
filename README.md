@@ -1,6 +1,15 @@
-# carebearium
+# vue-webpack-scaffold
 
-> A Vue js remake of the original EVE Online Carebearium tool.
+> Justin's custom vue webpack scaffold.
+
+Includes:
+	* code splitting
+	* cash busting
+	* css extraction
+	* file loading
+	* dev server with hot module reloading
+	* rimraf cleanup
+	* production ready build script
 
 ## Build Setup
 
