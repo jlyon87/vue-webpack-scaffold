@@ -20,7 +20,7 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'js/[name].[hash].js'
+		filename: '[name].[hash].js'
 	},
 	module: {
 		rules: [
@@ -49,13 +49,13 @@ module.exports = {
 				test: /\.(png|jpg|gif|svg)$/,
 				loader: 'file-loader',
 				options: {
-					name: 'assets/[name].[ext]?[hash]'
+					name: '[name].[ext]?[hash]'
 				}
 			}
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin("css/style.css"),
+		new ExtractTextPlugin("style.css"),
 		new webpack.optimize.CommonsChunkPlugin({
 			names: ["vendor", "manifest"]
 		}),
