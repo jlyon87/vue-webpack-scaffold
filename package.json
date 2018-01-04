@@ -9,8 +9,9 @@
     "clean": "rimraf dist",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production npm run clean && webpack -p --hide-modules",
-    "start": "node server.js"
-
+    "start": "node server.js",
+    "heroku-prebuild": "npm install -dev && npm run build",
+    "heroku-postbuild": "npm uninstall -dev"
   },
   "dependencies": {
     "axios": "^0.17.1",
