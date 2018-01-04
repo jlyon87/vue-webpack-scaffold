@@ -9,6 +9,11 @@ app.get("/hello", (req, res) => {
 	res.send({ hi: "there" });
 });
 
+app.use(function(req, res, next) {
+	console.log(JSON.stringify(req, null, 2));
+	next();
+});
+
 // Webpack Comes last.
 if (process.env.NODE_ENV !== "production") {
 	const webpackMiddleware = require("webpack-dev-middleware");
